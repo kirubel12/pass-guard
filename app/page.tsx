@@ -1,10 +1,17 @@
-import { ComponentExample } from "@/components/component-example";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Pricing } from "@/components/Pricing";
+import { Footer } from "@/components/Footer";
+import { Features } from "@/components/Features";
 
-export default function Page() {
-return (
-    <div>
-        <h1 className="text-2xl font-bold">Pass-Guard</h1>
-        <p className="text-sm font-medium">Secure your passwords with ease</p>
-    </div>
-);
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white dark:bg-pg-dark selection:bg-pg-green selection:text-pg-dark">
+      <Navbar />
+      <Hero />
+      <Features />
+      <Pricing />
+      <Footer />
+    </main>
+  );
 }
