@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { IconArrowRight, IconLock } from "@tabler/icons-react";
 
@@ -23,13 +24,14 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-          <Button
-            size="lg"
-            className="bg-pg-green text-pg-dark hover:bg-pg-green/90 font-semibold text-lg h-12 px-8 shadow-[0_0_20px_rgba(0,255,65,0.4)] transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.6)]"
-          >
-            Start for Free <IconArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-         
+          <Link href="/register">
+            <Button
+              size="lg"
+              className="bg-pg-green text-pg-dark hover:bg-pg-green/90 font-semibold text-lg h-12 px-8 shadow-[0_0_20px_rgba(0,255,65,0.4)] transition-all hover:shadow-[0_0_30px_rgba(0,255,65,0.6)]"
+            >
+              Start for Free <IconArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
 
 

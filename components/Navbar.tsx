@@ -28,9 +28,11 @@ export function Navbar() {
           <Link href="/login" className="text-sm font-medium text-muted-foreground hover:text-foreground hidden sm:block">
             Sign In
           </Link>
-          <Button className="bg-pg-green text-pg-dark hover:bg-pg-green/90 font-semibold shadow-[0_0_15px_rgba(0,255,65,0.3)] transition-all hover:shadow-[0_0_25px_rgba(0,255,65,0.5)]">
-            Get Started
-          </Button>
+          <Link href="/register">
+            <Button className="bg-pg-green text-pg-dark hover:bg-pg-green/90 font-semibold shadow-[0_0_15px_rgba(0,255,65,0.3)] transition-all hover:shadow-[0_0_25px_rgba(0,255,65,0.5)]">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
