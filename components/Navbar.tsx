@@ -22,9 +22,6 @@ export function Navbar() {
           <Link href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-pg-green transition-colors">
             Pricing
           </Link>
-          <Link href="#about" className="text-sm font-medium text-muted-foreground hover:text-pg-green transition-colors">
-            About
-          </Link>
         </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
